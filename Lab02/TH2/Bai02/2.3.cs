@@ -43,6 +43,7 @@ public class IntegerArray
 			{
 				Console.Write("Gia tri khong hop le. Nhap lai: ");
 			}
+			Console.WriteLine($"Da nhap phan tu thu {i}: {this.values[i]}");
 		}
 	}
 

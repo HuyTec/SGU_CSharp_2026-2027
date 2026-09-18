@@ -18,7 +18,8 @@ class Program7
     public static void run()
     {
         Console.Write("Nhap n: ");
-        long n = long.Parse(Console.ReadLine());
+        long n = long.Parse(Console.ReadLine() ?? string.Empty);
+        Console.WriteLine($"Da nhap n = {n}");
 
         if (isPrime(n))
             Console.WriteLine($"{n} la so nguyen to");

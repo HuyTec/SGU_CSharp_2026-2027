@@ -59,6 +59,7 @@ public class IntegerMatrix
 				{
 					Console.Write("Gia tri khong hop le. Nhap lai: ");
 				}
+				Console.WriteLine($"Da nhap phan tu [{i}, {j}]: {this.values[i, j]}");
 			}
 		}
 	}

@@ -16,18 +16,20 @@ public class Program4
     public static void run()
     {
     Console.Write("Nhap so nguyen x: ");
-    string input = Console.ReadLine();
+    string input = Console.ReadLine() ?? string.Empty;
     if (!int.TryParse(input, out int x))
     {
         throw new ArgumentException($"'{input}' khong phai la so nguyen hop le");
     }
+    Console.WriteLine($"Da nhap x = {x}");
 
     Console.Write("Nhap so nguyen y: ");
-    string input2 = Console.ReadLine();
+    string input2 = Console.ReadLine() ?? string.Empty;
     if (!int.TryParse(input2, out int y))
     {
         throw new ArgumentException($"'{input}' khong phai la so nguyen hop le");
     }
+    Console.WriteLine($"Da nhap y = {y}");
     Console.WriteLine("Ket qua {0}^{1} la: {2}", x, y, Power(x,y));
     }
 }

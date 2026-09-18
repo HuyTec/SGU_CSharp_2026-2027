@@ -16,10 +16,12 @@ public class Program3
     public static void run()
     {
         Console.Write("Nhap so nguyen x: ");
-        int x = int.Parse(Console.ReadLine());
+        int x = int.Parse(Console.ReadLine() ?? string.Empty);
+        Console.WriteLine($"Da nhap x = {x}");
 
         Console.Write("Nhap so nguyen y: ");
-        int y = int.Parse(Console.ReadLine());
+        int y = int.Parse(Console.ReadLine() ?? string.Empty);
+        Console.WriteLine($"Da nhap y = {y}");
         
         Console.WriteLine("Ket qua {0}^{1} la: {2}", x, y, Power(x,y));
     }

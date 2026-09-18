@@ -42,8 +42,10 @@ public class FractionList
 		{
 			Console.Write($"Nhap tu so phan so thu {i}: ");
 			long numerator = long.Parse(Console.ReadLine() ?? "0");
+			Console.WriteLine($"Da nhap tu so: {numerator}");
 			Console.Write($"Nhap mau so phan so thu {i}: ");
 			long denominator = long.Parse(Console.ReadLine() ?? "1");
+			Console.WriteLine($"Da nhap mau so: {denominator}");
 			this.fractions[i] = new Fraction(numerator, denominator);
 		}
 	}
@@ -61,7 +63,7 @@ public class FractionList
 
 	public void Output()
 	{
-		Console.WriteLine(string.Join(" + ", this.fractions));
+		Console.WriteLine(string.Join(" + ", this.fractions.Select(fraction => fraction.ToString())));
 		Console.WriteLine("Tong = " + this.Sum());
 	}
 }

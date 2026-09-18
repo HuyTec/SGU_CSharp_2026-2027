@@ -26,6 +26,7 @@ public class PersonList
         {
             Console.Write("So luong khong hop le. Nhap lai: ");
         }
+        Console.WriteLine($"Da nhap so luong nguoi: {count}");
 
         for (int i = 0; i < count; i++)
         {

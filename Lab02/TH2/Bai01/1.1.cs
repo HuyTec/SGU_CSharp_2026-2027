@@ -3,7 +3,8 @@ public class Program1_1
     public static void run()
     {
         Console.WriteLine("Nhap ho va ten: ");
-        string HoTen = Console.ReadLine();
+        string HoTen = Console.ReadLine() ?? string.Empty;
+        Console.WriteLine("Da nhap ho va ten: " + HoTen);
 
         Console.WriteLine("Nhap nam sinh: ");
         int tuoi = 0;
@@ -11,6 +12,7 @@ public class Program1_1
 
         if (hopLe)
         {
+            Console.WriteLine($"Da nhap nam sinh: {namSinh}");
             tuoi = DateTime.Now.Year - namSinh;
         }
         else
@@ -19,6 +21,5 @@ public class Program1_1
         }
 
         Console.WriteLine("Thong tin sinh vien - Ten: " + HoTen + " Tuoi: " + tuoi);
-        Console.ReadKey();
     }
 }

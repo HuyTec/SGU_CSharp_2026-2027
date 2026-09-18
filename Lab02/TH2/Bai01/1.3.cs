@@ -28,21 +28,25 @@ public class Person
         {
             Console.Write("Id khong hop le. Nhap lai: ");
         }
+        Console.WriteLine($"Da nhap id: {this.id}");
 
         Console.Write("Nhap ho ten: ");
         this.name = Console.ReadLine() ?? string.Empty;
+        Console.WriteLine($"Da nhap ho ten: {this.name}");
 
         Console.Write("Nhap nam sinh: ");
         while (!long.TryParse(Console.ReadLine(), out this.yob))
         {
             Console.Write("Nam sinh khong hop le. Nhap lai: ");
         }
+        Console.WriteLine($"Da nhap nam sinh: {this.yob}");
 
         Console.Write("Nhap nam mat (0 neu con song): ");
         while (!long.TryParse(Console.ReadLine(), out this.yod))
         {
             Console.Write("Nam mat khong hop le. Nhap lai: ");
         }
+        Console.WriteLine($"Da nhap nam mat: {this.yod}");
     }
 
     public void Output()

@@ -51,6 +51,7 @@ public class Polynomial
 			{
 				Console.Write("He so khong hop le. Nhap lai: ");
 			}
+			Console.WriteLine($"Da nhap he so a{i}: {coefficient}");
 
 			this.terms[i] = new Monomial(coefficient, i);
 		}

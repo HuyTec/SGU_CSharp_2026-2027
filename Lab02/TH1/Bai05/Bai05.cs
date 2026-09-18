@@ -90,9 +90,12 @@ class Program5
         while (true)
         {
             Console.Write(prompt);
-            string input = Console.ReadLine();
+            string input = Console.ReadLine() ?? string.Empty;
             if (int.TryParse(input, out int result))
+            {
+                Console.WriteLine($"Da nhap: {result}");
                 return result;
+            }
             Console.WriteLine($"'{input}' khong phai so nguyen hop le. Nhap lai.");
         }
     }
@@ -102,9 +105,12 @@ class Program5
         while (true)
         {
             Console.Write(prompt);
-            string input = Console.ReadLine();
+            string input = Console.ReadLine() ?? string.Empty;
             if (double.TryParse(input, out double result))
+            {
+                Console.WriteLine($"Da nhap: {result}");
                 return result;
+            }
             Console.WriteLine($"'{input}' khong phai so thuc hop le. Nhap lai.");
         }
     }

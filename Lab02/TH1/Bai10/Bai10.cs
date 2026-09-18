@@ -1,6 +1,6 @@
 public class Program10
 {    
-    static bool isPalindrome(string s)
+    public static bool IsPalindrome(string s)
     {
         int left = 0, right = s.Length - 1;
         while (left < right)

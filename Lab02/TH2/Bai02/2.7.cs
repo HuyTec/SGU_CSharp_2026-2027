@@ -10,18 +10,25 @@ public class Employee
 	{
 		Console.Write("Nhap ho ten: ");
 		this.Name = Console.ReadLine() ?? string.Empty;
+		Console.WriteLine($"Da nhap ho ten: {this.Name}");
 
 		Console.Write("Nhap muc luong: ");
-		while (!decimal.TryParse(Console.ReadLine(), out this.Salary))
+		decimal salary;
+		while (!decimal.TryParse(Console.ReadLine(), out salary))
 		{
 			Console.Write("Muc luong khong hop le. Nhap lai: ");
 		}
+		this.Salary = salary;
+		Console.WriteLine($"Da nhap muc luong: {this.Salary}");
 
 		Console.Write("Nhap so ngay vang: ");
-		while (!int.TryParse(Console.ReadLine(), out this.AbsentDays) || this.AbsentDays < 0)
+		int absentDays;
+		while (!int.TryParse(Console.ReadLine(), out absentDays) || absentDays < 0)
 		{
 			Console.Write("So ngay vang khong hop le. Nhap lai: ");
 		}
+		this.AbsentDays = absentDays;
+		Console.WriteLine($"Da nhap so ngay vang: {this.AbsentDays}");
 	}
 
 	public decimal GetSalary()

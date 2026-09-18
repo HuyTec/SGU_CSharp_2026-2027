@@ -8,6 +8,7 @@ public class Program16
 		{
 			Console.Write($"Nhap ho ten [{index}]: ");
 			names[index] = Console.ReadLine() ?? string.Empty;
+			Console.WriteLine($"Da nhap ho ten [{index}]: {names[index]}");
 		}
 
 		return names;

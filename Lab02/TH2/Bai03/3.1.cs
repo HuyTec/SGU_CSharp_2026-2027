@@ -27,7 +27,7 @@ public class Student : IComparable<Student>
 
 public class ArraySortExample
 {
-	public static void Run()
+	public static void run()
 	{
 		Student[] students =
 		{

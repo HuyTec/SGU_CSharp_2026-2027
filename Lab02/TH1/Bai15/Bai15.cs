@@ -11,6 +11,7 @@ public class Program15
 			{
 				Console.Write("Gia tri khong hop le. Nhap lai: ");
 			}
+			Console.WriteLine($"Da nhap phan tu [{index}]: {numbers[index]}");
 		}
 
 		return numbers;

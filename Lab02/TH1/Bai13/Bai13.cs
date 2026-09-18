@@ -9,12 +9,15 @@ public class SinhVien
 	{
 		Console.Write("Nhap ma sinh vien: ");
 		MaSinhVien = Console.ReadLine() ?? string.Empty;
+		Console.WriteLine($"Da nhap ma sinh vien: {MaSinhVien}");
 
 		Console.Write("Nhap ho ten: ");
 		HoTen = Console.ReadLine() ?? string.Empty;
+		Console.WriteLine($"Da nhap ho ten: {HoTen}");
 
 		Console.Write("Nhap dia chi: ");
 		DiaChi = Console.ReadLine() ?? string.Empty;
+		Console.WriteLine($"Da nhap dia chi: {DiaChi}");
 
 		Console.Write("Nhap sinh vien nam thu may: ");
 		int namThu;
@@ -24,6 +27,7 @@ public class SinhVien
 		}
 
 		NamThu = namThu;
+		Console.WriteLine($"Da nhap sinh vien nam thu: {NamThu}");
 	}
 
 	public void Xuat()

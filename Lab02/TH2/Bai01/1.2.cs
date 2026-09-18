@@ -27,9 +27,11 @@ public class Point
     public void Input()
     {
         Console.Write("Nhap x: ");
-        x = double.Parse(Console.ReadLine());
+        x = double.Parse(Console.ReadLine() ?? string.Empty);
+        Console.WriteLine($"Da nhap x = {x}");
         Console.Write("Nhap y: ");
-        y = double.Parse(Console.ReadLine());
+        y = double.Parse(Console.ReadLine() ?? string.Empty);
+        Console.WriteLine($"Da nhap y = {y}");
     }
 
     public void Output()
@@ -57,7 +59,7 @@ public class Point
     }
 
     //instance
-    public double dis(Point p1, Point p2){
+    public double DistanceTo(Point p1, Point p2){
         return Math.Sqrt(Math.Pow(p2.x-p1.x, 2)+Math.Pow(p2.y-p1.y,2));
     }
 
@@ -68,7 +70,7 @@ public class Point
     }
 
     //instance
-    public Point mid(Point p1, Point p2){
+    public Point MidpointTo(Point p1, Point p2){
         return new Point((p1.x+p2.x)/2, (p1.y+p2.y)/2);
     }
 }

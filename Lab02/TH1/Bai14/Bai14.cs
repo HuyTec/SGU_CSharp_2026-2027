@@ -15,6 +15,7 @@ public class NhanVien
 	{
 		Console.Write("Nhap ho ten nhan vien: ");
 		HoTen = Console.ReadLine() ?? string.Empty;
+		Console.WriteLine($"Da nhap ho ten: {HoTen}");
 
 		Console.Write("Nhap muc luong: ");
 
@@ -26,6 +27,7 @@ public class NhanVien
         }
 
         MucLuong = mucLuong; 
+		Console.WriteLine($"Da nhap muc luong: {MucLuong}");
 
 		Console.Write("Nhap so ngay vang: ");
 		int soNgayVang;
@@ -35,6 +37,7 @@ public class NhanVien
 		}
 
 		SoNgayVang = soNgayVang;
+		Console.WriteLine($"Da nhap so ngay vang: {SoNgayVang}");
 	}
 
 	public void Xuat()
