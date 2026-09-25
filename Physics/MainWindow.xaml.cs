@@ -21,12 +21,9 @@ public partial class MainWindow : Window
         var body1 = new Body(20, new Vector2(300, 120), new Vector2(0, 0), 24);
         var body2 = new Body(30, new Vector2(550, 220), new Vector2(0, 0), 28);
 
-        body1.PreviousPosition = body1.Position - new Vector2(0, 5);
-        body2.PreviousPosition = body2.Position - new Vector2(3, 0);
-
         _world.AddBody(body1);
         _world.AddBody(body2);
-        _world.Gravity = new Vector2(0, 0.25f);
+        _world.Gravity = Vector2.Zero;
 
         _timer.Interval = TimeSpan.FromMilliseconds(16.6);
         _timer.Tick += (_, _) =>
