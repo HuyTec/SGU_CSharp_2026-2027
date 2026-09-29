@@ -164,10 +164,7 @@ public class Tester
 
         Console.WriteLine("\nDANH SÁCH NHÂN VIÊN");
         foreach (NhanVien nv in danhSach)
-        {
-            nv.Xuat();
-            Console.WriteLine("--------------------");
-        }
+        
 
         Console.WriteLine("\nTỔNG LƯƠNG");
         Console.WriteLine($"Nhà khoa học: {tongKhoaHoc:N0} VNĐ");
