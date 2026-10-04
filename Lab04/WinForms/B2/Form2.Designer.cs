@@ -1,4 +1,4 @@
-﻿namespace WinForms.B2
+﻿namespace WinForms.B21
 {
     partial class Form2
     {
@@ -28,208 +28,193 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblTruong = new Label();
-            rdoRed = new RadioButton();
-            rdoGreen = new RadioButton();
-            rdoBlue = new RadioButton();
-            rdoAutoColor = new RadioButton();
+            title = new Label();
+            lblName = new Label();
+            lblEmail = new Label();
+            lblPassword = new Label();
+            lblconfirmPassword = new Label();
+            tName = new TextBox();
+            tEmail = new TextBox();
+            tPassword = new TextBox();
+            tConfimPassword = new TextBox();
+            btnSubmit = new Button();
+            valid = new Label();
+            label1 = new Label();
             label2 = new Label();
-            label3 = new Label();
-            exit = new Button();
-            label4 = new Label();
-            rdoRegular = new CheckBox();
-            rdoBold = new CheckBox();
-            rdoItalic = new CheckBox();
-            rdoBoldItalic = new CheckBox();
             SuspendLayout();
             // 
-            // lblTruong
+            // title
             // 
-            lblTruong.AutoSize = true;
-            lblTruong.Location = new Point(177, 45);
-            lblTruong.Name = "lblTruong";
-            lblTruong.Size = new Size(0, 20);
-            lblTruong.TabIndex = 0;
+            title.Anchor = AnchorStyles.Top;
+            title.AutoSize = true;
+            title.Font = new Font("Trebuchet MS", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            title.ForeColor = Color.FromArgb(0, 192, 192);
+            title.Location = new Point(207, 9);
+            title.Name = "title";
+            title.Size = new Size(284, 36);
+            title.TabIndex = 0;
+            title.Text = "ĐĂNG KÝ TÀI KHOẢN";
             // 
-            // rdoRed
+            // lblName
             // 
-            rdoRed.Anchor = AnchorStyles.Top;
-            rdoRed.AutoSize = true;
-            rdoRed.Location = new Point(520, 275);
-            rdoRed.Name = "rdoRed";
-            rdoRed.Size = new Size(56, 24);
-            rdoRed.TabIndex = 9;
-            rdoRed.TabStop = true;
-            rdoRed.Text = "Red";
-            rdoRed.UseVisualStyleBackColor = true;
-            rdoRed.CheckedChanged += rdoMau_CheckedChanged;
+            lblName.Anchor = AnchorStyles.Top;
+            lblName.AutoSize = true;
+            lblName.Location = new Point(67, 61);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(107, 20);
+            lblName.TabIndex = 1;
+            lblName.Text = "Tên đăng nhập";
             // 
-            // rdoGreen
+            // lblEmail
             // 
-            rdoGreen.Anchor = AnchorStyles.Top;
-            rdoGreen.AutoSize = true;
-            rdoGreen.Location = new Point(520, 339);
-            rdoGreen.Name = "rdoGreen";
-            rdoGreen.Size = new Size(69, 24);
-            rdoGreen.TabIndex = 10;
-            rdoGreen.TabStop = true;
-            rdoGreen.Text = "Green";
-            rdoGreen.UseVisualStyleBackColor = true;
-            rdoGreen.CheckedChanged += rdoMau_CheckedChanged;
+            lblEmail.Anchor = AnchorStyles.Top;
+            lblEmail.AutoSize = true;
+            lblEmail.Location = new Point(67, 112);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(96, 20);
+            lblEmail.TabIndex = 2;
+            lblEmail.Text = "Địa chỉ email";
             // 
-            // rdoBlue
+            // lblPassword
             // 
-            rdoBlue.Anchor = AnchorStyles.Top;
-            rdoBlue.AutoSize = true;
-            rdoBlue.Location = new Point(520, 400);
-            rdoBlue.Name = "rdoBlue";
-            rdoBlue.Size = new Size(59, 24);
-            rdoBlue.TabIndex = 11;
-            rdoBlue.TabStop = true;
-            rdoBlue.Text = "Blue";
-            rdoBlue.UseVisualStyleBackColor = true;
-            rdoBlue.CheckedChanged += rdoMau_CheckedChanged;
+            lblPassword.Anchor = AnchorStyles.Top;
+            lblPassword.AutoSize = true;
+            lblPassword.Location = new Point(67, 165);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(70, 20);
+            lblPassword.TabIndex = 3;
+            lblPassword.Text = "Mật khẩu";
             // 
-            // rdoAutoColor
+            // lblconfirmPassword
             // 
-            rdoAutoColor.Anchor = AnchorStyles.Top;
-            rdoAutoColor.AutoSize = true;
-            rdoAutoColor.Location = new Point(520, 211);
-            rdoAutoColor.Name = "rdoAutoColor";
-            rdoAutoColor.Size = new Size(98, 24);
-            rdoAutoColor.TabIndex = 8;
-            rdoAutoColor.TabStop = true;
-            rdoAutoColor.Text = "AutoColor";
-            rdoAutoColor.UseVisualStyleBackColor = true;
-            rdoAutoColor.CheckedChanged += rdoMau_CheckedChanged;
+            lblconfirmPassword.Anchor = AnchorStyles.Top;
+            lblconfirmPassword.AutoSize = true;
+            lblconfirmPassword.Location = new Point(67, 218);
+            lblconfirmPassword.Name = "lblconfirmPassword";
+            lblconfirmPassword.Size = new Size(134, 20);
+            lblconfirmPassword.TabIndex = 4;
+            lblconfirmPassword.Text = "Xác nhận mật khẩu";
+            // 
+            // tName
+            // 
+            tName.Anchor = AnchorStyles.Top;
+            tName.Location = new Point(207, 58);
+            tName.Name = "tName";
+            tName.Size = new Size(388, 27);
+            tName.TabIndex = 5;
+            // 
+            // tEmail
+            // 
+            tEmail.Anchor = AnchorStyles.Top;
+            tEmail.Location = new Point(207, 109);
+            tEmail.Name = "tEmail";
+            tEmail.Size = new Size(388, 27);
+            tEmail.TabIndex = 6;
+            tEmail.Validating += tEmail_Validating;
+            // 
+            // tPassword
+            // 
+            tPassword.Anchor = AnchorStyles.Top;
+            tPassword.Location = new Point(207, 162);
+            tPassword.Name = "tPassword";
+            tPassword.Size = new Size(388, 27);
+            tPassword.TabIndex = 7;
+            // 
+            // tConfimPassword
+            // 
+            tConfimPassword.Anchor = AnchorStyles.Top;
+            tConfimPassword.Location = new Point(207, 215);
+            tConfimPassword.Name = "tConfimPassword";
+            tConfimPassword.Size = new Size(388, 27);
+            tConfimPassword.TabIndex = 8;
+            tConfimPassword.KeyDown += tConfimPassword_KeyDown;
+            // 
+            // btnSubmit
+            // 
+            btnSubmit.Anchor = AnchorStyles.Top;
+            btnSubmit.BackColor = SystemColors.Control;
+            btnSubmit.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSubmit.ForeColor = Color.FromArgb(0, 0, 192);
+            btnSubmit.Location = new Point(270, 280);
+            btnSubmit.Name = "btnSubmit";
+            btnSubmit.Size = new Size(133, 57);
+            btnSubmit.TabIndex = 9;
+            btnSubmit.Text = "Đăng ký";
+            btnSubmit.UseVisualStyleBackColor = false;
+            btnSubmit.Click += btnSubmit_Click;
+            // 
+            // valid
+            // 
+            valid.Anchor = AnchorStyles.Top;
+            valid.AutoSize = true;
+            valid.ForeColor = Color.FromArgb(192, 0, 0);
+            valid.Location = new Point(601, 61);
+            valid.Name = "valid";
+            valid.Size = new Size(25, 20);
+            valid.TabIndex = 10;
+            valid.Text = "(*)";
+            // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.Top;
+            label1.AutoSize = true;
+            label1.ForeColor = Color.FromArgb(192, 0, 0);
+            label1.Location = new Point(601, 116);
+            label1.Name = "label1";
+            label1.Size = new Size(25, 20);
+            label1.TabIndex = 11;
+            label1.Text = "(*)";
             // 
             // label2
             // 
             label2.Anchor = AnchorStyles.Top;
             label2.AutoSize = true;
-            label2.Location = new Point(146, 177);
+            label2.ForeColor = Color.FromArgb(192, 0, 0);
+            label2.Location = new Point(601, 165);
             label2.Name = "label2";
-            label2.Size = new Size(74, 20);
+            label2.Size = new Size(25, 20);
             label2.TabIndex = 12;
-            label2.Text = "Font Style";
-            // 
-            // label3
-            // 
-            label3.Anchor = AnchorStyles.Top;
-            label3.AutoSize = true;
-            label3.Location = new Point(481, 177);
-            label3.Name = "label3";
-            label3.Size = new Size(45, 20);
-            label3.TabIndex = 13;
-            label3.Text = "Color";
-            // 
-            // exit
-            // 
-            exit.Anchor = AnchorStyles.Top;
-            exit.Location = new Point(361, 476);
-            exit.Name = "exit";
-            exit.Size = new Size(124, 52);
-            exit.TabIndex = 14;
-            exit.Text = "Exit";
-            exit.UseVisualStyleBackColor = true;
-            exit.Click += btnExit_Click;
-            // 
-            // label4
-            // 
-            label4.Anchor = AnchorStyles.Top;
-            label4.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(119, 45);
-            label4.Name = "label4";
-            label4.Size = new Size(599, 103);
-            label4.TabIndex = 15;
-            label4.Text = "Trường Đại học Công nghệ Thực Phẩm         Khoa Công Nghệ Thông tin";
-            // 
-            // rdoRegular
-            // 
-            rdoRegular.Anchor = AnchorStyles.Top;
-            rdoRegular.AutoSize = true;
-            rdoRegular.Location = new Point(211, 212);
-            rdoRegular.Name = "rdoRegular";
-            rdoRegular.Size = new Size(82, 24);
-            rdoRegular.TabIndex = 16;
-            rdoRegular.Text = "Regular";
-            rdoRegular.UseVisualStyleBackColor = true;
-            rdoRegular.CheckedChanged += rdoKieuChu_CheckedChanged;
-            // 
-            // rdoBold
-            // 
-            rdoBold.Anchor = AnchorStyles.Top;
-            rdoBold.AutoSize = true;
-            rdoBold.Location = new Point(211, 275);
-            rdoBold.Name = "rdoBold";
-            rdoBold.Size = new Size(62, 24);
-            rdoBold.TabIndex = 17;
-            rdoBold.Text = "Bold";
-            rdoBold.UseVisualStyleBackColor = true;
-            rdoBold.CheckedChanged += rdoKieuChu_CheckedChanged;
-            // 
-            // rdoItalic
-            // 
-            rdoItalic.Anchor = AnchorStyles.Top;
-            rdoItalic.AutoSize = true;
-            rdoItalic.Location = new Point(211, 340);
-            rdoItalic.Name = "rdoItalic";
-            rdoItalic.Size = new Size(63, 24);
-            rdoItalic.TabIndex = 18;
-            rdoItalic.Text = "Italic";
-            rdoItalic.UseVisualStyleBackColor = true;
-            rdoItalic.CheckedChanged += rdoKieuChu_CheckedChanged;
-            // 
-            // rdoBoldItalic
-            // 
-            rdoBoldItalic.Anchor = AnchorStyles.Top;
-            rdoBoldItalic.AutoSize = true;
-            rdoBoldItalic.Location = new Point(211, 400);
-            rdoBoldItalic.Name = "rdoBoldItalic";
-            rdoBoldItalic.Size = new Size(127, 24);
-            rdoBoldItalic.TabIndex = 19;
-            rdoBoldItalic.Text = "Bold and Italic";
-            rdoBoldItalic.UseVisualStyleBackColor = true;
-            rdoBoldItalic.CheckedChanged += rdoKieuChu_CheckedChanged;
+            label2.Text = "(*)";
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(846, 607);
-            Controls.Add(rdoBoldItalic);
-            Controls.Add(rdoItalic);
-            Controls.Add(rdoBold);
-            Controls.Add(rdoRegular);
-            Controls.Add(label4);
-            Controls.Add(exit);
-            Controls.Add(label3);
+            ClientSize = new Size(719, 372);
             Controls.Add(label2);
-            Controls.Add(rdoAutoColor);
-            Controls.Add(rdoBlue);
-            Controls.Add(rdoGreen);
-            Controls.Add(rdoRed);
-            Controls.Add(lblTruong);
+            Controls.Add(label1);
+            Controls.Add(valid);
+            Controls.Add(btnSubmit);
+            Controls.Add(tConfimPassword);
+            Controls.Add(tPassword);
+            Controls.Add(tEmail);
+            Controls.Add(tName);
+            Controls.Add(lblconfirmPassword);
+            Controls.Add(lblPassword);
+            Controls.Add(lblEmail);
+            Controls.Add(lblName);
+            Controls.Add(title);
             Name = "Form2";
             Text = "Form1";
+            FormClosing += Form2_FormClosing;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label lblTruong;
-        private RadioButton rdoRed;
-        private RadioButton rdoGreen;
-        private RadioButton rdoBlue;
-        private RadioButton rdoAutoColor;
+        private Label title;
+        private Label lblName;
+        private Label lblEmail;
+        private Label lblPassword;
+        private Label lblconfirmPassword;
+        private TextBox tName;
+        private TextBox tEmail;
+        private TextBox tPassword;
+        private TextBox tConfimPassword;
+        private Button btnSubmit;
+        private Label valid;
+        private Label label1;
         private Label label2;
-        private Label label3;
-        private Button exit;
-        private Label label4;
-        private CheckBox rdoRegular;
-        private CheckBox rdoBold;
-        private CheckBox rdoItalic;
-        private CheckBox rdoBoldItalic;
     }
 }
