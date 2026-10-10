@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="5d\formBaitap1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="5d\formBaitap2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="5d\frmLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="5d\ListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="5d\QuanLyDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="5d\SaveFileDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="5d\Timer Demo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
