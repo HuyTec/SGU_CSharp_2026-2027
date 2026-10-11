@@ -13,6 +13,12 @@
     <Compile Update="5d\ListView.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="5d\QLMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="5d\QLSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="5d\QuanLyDiem.cs">
       <SubType>Form</SubType>
     </Compile>

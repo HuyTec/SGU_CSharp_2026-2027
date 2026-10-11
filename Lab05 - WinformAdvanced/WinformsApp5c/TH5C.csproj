@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\WinFormsApp5d\5d\**\*.cs" Link="5d\%(RecursiveDir)%(Filename)%(Extension)" />
+    <EmbeddedResource Include="..\WinFormsApp5d\5d\**\*.resx" Link="5d\%(RecursiveDir)%(Filename)%(Extension)" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="fmMauPhongBan.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="fmUocSo.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="fmSinhVien.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="fmChuoi.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="fmTuDien.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="fmListSo.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="fmDanhBa.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="fmChonBai.cs"><SubType>Form</SubType></Compile>
+  </ItemGroup>
+
+</Project>
