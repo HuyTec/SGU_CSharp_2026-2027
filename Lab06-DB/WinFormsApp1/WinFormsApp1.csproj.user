@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="6b\Form_2_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="6b\Form_2_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="6b\Form_3_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="6b\Form_3_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="6b\4_adv\ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="6b\4_adv\InventoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="6b\4_adv\ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="6b\4_adv\SalesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
